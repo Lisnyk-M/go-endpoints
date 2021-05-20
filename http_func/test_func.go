@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func send() {
+func Send() {
 	client := &http.Client{}
 	req, err := http.NewRequest(
 		"GET", "https://health-fsoff2.herokuapp.com/products/?%D1%81%D1%8B%D1%80%D0%BE%D0%BA", nil,
