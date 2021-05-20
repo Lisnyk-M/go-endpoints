@@ -11,6 +11,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
 	"github.com/lib/pq"
+	_ "github.com/lisnyk-m/go-endpoints/http_func"
 )
 
 func db_connection() *gorm.DB {
