@@ -9,6 +9,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
 	"github.com/lib/pq"
+	// "http_func"
 )
 
 func db_connection() *gorm.DB {
@@ -115,6 +116,7 @@ func main() {
 
 		c.JSON(201, gin.H{"data": res.RowsAffected})
 	})
+	// http_func.send()
 
 	r.Run()
 }
