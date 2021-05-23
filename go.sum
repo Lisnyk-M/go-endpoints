@@ -1,5 +1,5 @@
-github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210520192850-ac73e502ddcf h1:2Y7dKMoazZPbWzgwKy2ArW5sPo12G4yc+yXLQfh8G7I=
-github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210520192850-ac73e502ddcf/go.mod h1:pYo9CQvOzI2ybBbMFcEjXveYqWanLCdySJb+Jd85E2Q=
+github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210520200038-a43ce2970467 h1:dO4zPgr3rMtTo+T4si2gsZR/rHIOraOU+ezakqCiGXw=
+github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210520200038-a43ce2970467/go.mod h1:pYo9CQvOzI2ybBbMFcEjXveYqWanLCdySJb+Jd85E2Q=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

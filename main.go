@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/Lisnyk-M/go-endpoints/http_func"
+	"github.com/Lisnyk-M/go-endpoints/models"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
@@ -40,17 +41,17 @@ func db_connection() *gorm.DB {
 func main() {
 	db := db_connection()
 
-	type User struct {
-		gorm.Model
-		Name     string
-		Email    string
-		Password string
-	}
-	db.AutoMigrate(&User{})
+	// type User struct {
+	// 	gorm.Model
+	// 	Name     string
+	// 	Email    string
+	// 	Password string
+	// }
+	db.AutoMigrate(&models.User{})
 	r := gin.Default()
 
 	r.GET("/user/:id", func(c *gin.Context) {
-		var user User
+		var user models.User
 		id := c.Param("id")
 		res := db.First(&user, id)
 
@@ -63,13 +64,13 @@ func main() {
 	})
 
 	r.GET("/users", func(c *gin.Context) {
-		var users []User
+		var users []models.User
 		db.Find(&users)
 		c.JSON(http.StatusOK, users)
 	})
 
 	r.DELETE("/user/:id", func(c *gin.Context) {
-		var user User
+		var user models.User
 		id := c.Param("id")
 
 		res := db.First(&user, id)
@@ -88,7 +89,7 @@ func main() {
 	})
 
 	r.POST("/auth/register", func(c *gin.Context) {
-		var user User
+		var user models.User
 		type RegisterForm struct {
 			User     string `json:"user" binding:"required"`
 			Email    string `json:"email" binding:"required"`
@@ -108,7 +109,7 @@ func main() {
 			return
 		}
 
-		result := db.Create(&User{Name: form.User, Email: form.Email, Password: form.Password})
+		result := db.Create(&models.User{Name: form.User, Email: form.Email, Password: form.Password})
 		if result.Error != nil {
 			c.JSON(400, gin.H{"error": res.Error})
 			return
