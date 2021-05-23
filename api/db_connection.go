@@ -12,7 +12,7 @@ import (
 
 var DB *gorm.DB
 
-func db_connection() {
+func Db_connection() {
 	if err := godotenv.Load(); err != nil {
 		fmt.Println("No .env file found")
 	}

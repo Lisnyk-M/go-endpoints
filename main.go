@@ -3,7 +3,8 @@ package main
 import (
 	"github.com/Lisnyk-M/go-endpoints/http_func"
 	// "github.com/Lisnyk-M/go-endpoints/models"
-
+	"github.com/Lisnyk-M/go-endpoints/api"
+	"github.com/Lisnyk-M/go-endpoints/controllers"
 	"github.com/gin-gonic/gin"
 )
 
@@ -33,7 +34,7 @@ import (
 // }
 
 func main() {
-	db := api.db_connection()
+	db := api.Db_connection()
 	// db.AutoMigrate(&models.User{})
 	r := gin.Default()
 
@@ -55,7 +56,7 @@ func main() {
 	// 	db.Find(&users)
 	// 	c.JSON(http.StatusOK, users)
 	// })
-	r.GET("/users", controllers.getUsers())
+	r.GET("/users", controllers.GetUsers())
 
 	// r.DELETE("/user/:id", func(c *gin.Context) {
 	// 	var user models.User

@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func getUsers(c *gin.Context) {
+func GetUsers(c *gin.Context) {
 	var users []models.User
 	api.DB.Find(&users)
 	c.JSON(http.StatusOK, users)
