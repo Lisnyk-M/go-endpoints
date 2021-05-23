@@ -3,8 +3,7 @@ package main
 import (
 	"github.com/Lisnyk-M/go-endpoints/http_func"
 	// "github.com/Lisnyk-M/go-endpoints/models"
-	// "github.com/Lisnyk-M/go-endpoints/controllers"
-	// "github.com/Lisnyk-M/go-endpoints/api"
+
 	"github.com/gin-gonic/gin"
 )
 
