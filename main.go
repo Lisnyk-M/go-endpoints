@@ -8,31 +8,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// func db_connection() *gorm.DB {
-// 	if err := godotenv.Load(); err != nil {
-// 		fmt.Println("No .env file found")
-// 	}
-// 	postgresql_string, exists := os.LookupEnv("POSTGRESQL_CONNECTION")
-
-// 	if exists {
-// 		fmt.Println(postgresql_string)
-// 	} else {
-// 		fmt.Println(".env not exist")
-// 	}
-
-// 	pgUrl, err := pq.ParseURL(postgresql_string)
-// 	if err != nil {
-// 		panic("Failed to connect to database!")
-// 	}
-
-// 	db, err := gorm.Open("postgres", pgUrl)
-
-// 	if err != nil {
-// 		panic("Failed to connect to database! 222222222222222")
-// 	}
-// 	return db
-// }
-
 func main() {
 	api.Db_connection()
 	// db.AutoMigrate(&models.User{})
@@ -57,6 +32,9 @@ func main() {
 	// 	c.JSON(http.StatusOK, users)
 	// })
 	r.GET("/users", controllers.GetUsers)
+	r.GET("/user/:id", controllers.GetUserById)
+	r.DELETE("/user/:id", controllers.DeleteUserById)
+	r.POST("/auth/register", controllers.Register)
 
 	// r.DELETE("/user/:id", func(c *gin.Context) {
 	// 	var user models.User

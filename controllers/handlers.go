@@ -17,7 +17,7 @@ func GetUsers(c *gin.Context) {
 func GetUserById(c *gin.Context) {
 	var user models.User
 	id := c.Param("id")
-	res := db.First(&user, id)
+	res := api.DB.First(&user, id)
 
 	if res.Error != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Not found :)"})
@@ -25,19 +25,19 @@ func GetUserById(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, user)
-})
+}
 
 func DeleteUserById(c *gin.Context) {
 	var user models.User
 	id := c.Param("id")
 
-	res := db.First(&user, id)
+	res := api.DB.First(&user, id)
 	if res.Error != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Not found :)"})
 		return
 	}
 
-	result := db.Delete(&user, "email = ?", user.Email)
+	result := api.DB.Delete(&user, "email = ?", user.Email)
 	if result.Error != nil {
 		c.JSON(http.StatusOK, res.Error)
 		return
@@ -61,13 +61,13 @@ func Register(c *gin.Context) {
 		return
 	}
 
-	res := db.First(&user, "email = ?", form.Email)
+	res := api.DB.First(&user, "email = ?", form.Email)
 	if res.Error == nil {
 		c.JSON(400, gin.H{"error": "user allready exists"})
 		return
 	}
 
-	result := db.Create(&models.User{Name: form.User, Email: form.Email, Password: form.Password})
+	result := api.DB.Create(&models.User{Name: form.User, Email: form.Email, Password: form.Password})
 	if result.Error != nil {
 		c.JSON(400, gin.H{"error": res.Error})
 		return
