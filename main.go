@@ -34,7 +34,7 @@ import (
 // }
 
 func main() {
-	db := api.Db_connection()
+	api.Db_connection()
 	// db.AutoMigrate(&models.User{})
 	r := gin.Default()
 
@@ -56,7 +56,7 @@ func main() {
 	// 	db.Find(&users)
 	// 	c.JSON(http.StatusOK, users)
 	// })
-	r.GET("/users", controllers.GetUsers())
+	r.GET("/users", controllers.GetUsers)
 
 	// r.DELETE("/user/:id", func(c *gin.Context) {
 	// 	var user models.User
