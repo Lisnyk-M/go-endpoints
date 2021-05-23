@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/Lisnyk-M/go-endpoints/models"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
 	"github.com/lib/pq"
@@ -34,5 +35,6 @@ func db_connection() {
 		panic("Failed to connect to database! 222222222222222")
 	}
 	// return db
+	db.AutoMigrate(&models.User{})
 	DB = db
 }

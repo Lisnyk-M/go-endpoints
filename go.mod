@@ -4,9 +4,6 @@ go 1.16
 
 require (
 	github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210520200038-a43ce2970467
-	github.com/Lisnyk-M/go-endpoints/models v0.0.0-20210523101732-2eef23818042
 	github.com/gin-gonic/gin v1.7.1
-	github.com/jinzhu/gorm v1.9.16
-	github.com/joho/godotenv v1.3.0
-	github.com/lib/pq v1.10.1
+	golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd // indirect
 )
