@@ -40,13 +40,6 @@ func db_connection() *gorm.DB {
 
 func main() {
 	db := db_connection()
-
-	// type User struct {
-	// 	gorm.Model
-	// 	Name     string
-	// 	Email    string
-	// 	Password string
-	// }
 	db.AutoMigrate(&models.User{})
 	r := gin.Default()
 
