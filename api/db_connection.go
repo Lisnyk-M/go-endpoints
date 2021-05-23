@@ -34,7 +34,6 @@ func Db_connection() {
 	if err != nil {
 		panic("Failed to connect to database! 222222222222222")
 	}
-	// return db
 	db.AutoMigrate(&models.User{})
 	DB = db
 }

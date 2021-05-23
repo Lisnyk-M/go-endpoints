@@ -2,6 +2,8 @@ github.com/Lisnyk-M/go-endpoints/api v0.0.0-20210523161612-304771ac2315 h1:SiPq3
 github.com/Lisnyk-M/go-endpoints/api v0.0.0-20210523161612-304771ac2315/go.mod h1:RP8cLiVfMfJEoEAIPzoH73COD2XyJ/L8DL2eeSLXfXI=
 github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523161612-304771ac2315 h1:PaSKwm4glpz40S7QyLQmjuPGSyPdTZEYTiHmg9Cy4c0=
 github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523161612-304771ac2315/go.mod h1:Pc10iTNi/H15y3+eoi2IKXwzAefVpgH+NKB8EDk3vQg=
+github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523170803-ef39f29eca2f h1:94PQI3AQsvZWUOQLwqpl7XoijIekD+/9xUov7nGRJ0Y=
+github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523170803-ef39f29eca2f/go.mod h1:Pc10iTNi/H15y3+eoi2IKXwzAefVpgH+NKB8EDk3vQg=
 github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210523161612-304771ac2315 h1:/LEG67hdBQygYgYmEsbUEKfHhBnOXdTMqWDGdCqZr3w=
 github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210523161612-304771ac2315/go.mod h1:pYo9CQvOzI2ybBbMFcEjXveYqWanLCdySJb+Jd85E2Q=
 github.com/Lisnyk-M/go-endpoints/models v0.0.0-20210523161110-08462027d748 h1:Tmurc7G7dkgSKfW90l4Ck3dz8lkB+gge1mdBjZGrKTk=
