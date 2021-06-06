@@ -1,13 +1,11 @@
 github.com/Lisnyk-M/go-endpoints/api v0.0.0-20210523161612-304771ac2315 h1:SiPq3Xf4Q6+86nQhpIm6MyAOquqJeXgH+q75rPZbw+w=
 github.com/Lisnyk-M/go-endpoints/api v0.0.0-20210523161612-304771ac2315/go.mod h1:RP8cLiVfMfJEoEAIPzoH73COD2XyJ/L8DL2eeSLXfXI=
-github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523161612-304771ac2315 h1:PaSKwm4glpz40S7QyLQmjuPGSyPdTZEYTiHmg9Cy4c0=
-github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523161612-304771ac2315/go.mod h1:Pc10iTNi/H15y3+eoi2IKXwzAefVpgH+NKB8EDk3vQg=
 github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523170803-ef39f29eca2f h1:94PQI3AQsvZWUOQLwqpl7XoijIekD+/9xUov7nGRJ0Y=
 github.com/Lisnyk-M/go-endpoints/controllers v0.0.0-20210523170803-ef39f29eca2f/go.mod h1:Pc10iTNi/H15y3+eoi2IKXwzAefVpgH+NKB8EDk3vQg=
 github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210523161612-304771ac2315 h1:/LEG67hdBQygYgYmEsbUEKfHhBnOXdTMqWDGdCqZr3w=
 github.com/Lisnyk-M/go-endpoints/http_func v0.0.0-20210523161612-304771ac2315/go.mod h1:pYo9CQvOzI2ybBbMFcEjXveYqWanLCdySJb+Jd85E2Q=
-github.com/Lisnyk-M/go-endpoints/models v0.0.0-20210523161110-08462027d748 h1:Tmurc7G7dkgSKfW90l4Ck3dz8lkB+gge1mdBjZGrKTk=
-github.com/Lisnyk-M/go-endpoints/models v0.0.0-20210523161110-08462027d748/go.mod h1:WkLel2d+NCLYkwHybBiTFG9NYBNqiJivJG/iAAyrCUo=
+github.com/Lisnyk-M/go-endpoints/models v0.0.0-20210523171620-271d9f4fd6f8 h1:LiQN/pE/UEi56b60wSCw1+gVm9QTpQRgkKQ/+Lq424w=
+github.com/Lisnyk-M/go-endpoints/models v0.0.0-20210523171620-271d9f4fd6f8/go.mod h1:WkLel2d+NCLYkwHybBiTFG9NYBNqiJivJG/iAAyrCUo=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

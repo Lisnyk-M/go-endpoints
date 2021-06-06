@@ -16,6 +16,7 @@ func main() {
 	r.GET("/user/:id", controllers.GetUserById)
 	r.DELETE("/user/:id", controllers.DeleteUserById)
 	r.POST("/auth/register", controllers.Register)
+	r.GET("/auth/get-email", controllers.GetEmail)
 
 	http_func.Send()
 	r.Run()

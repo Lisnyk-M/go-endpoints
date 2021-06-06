@@ -48,12 +48,7 @@ func DeleteUserById(c *gin.Context) {
 
 func Register(c *gin.Context) {
 	var user models.User
-	type RegisterForm struct {
-		User     string `json:"user" binding:"required"`
-		Email    string `json:"email" binding:"required"`
-		Password string `json:"password" binding:"required"`
-	}
-	var form RegisterForm
+	var form models.RegisterForm
 
 	errr := c.ShouldBindJSON(&form)
 	if errr != nil {
@@ -74,4 +69,17 @@ func Register(c *gin.Context) {
 	}
 
 	c.JSON(201, gin.H{"data": res.RowsAffected})
+}
+
+func GetEmail(c *gin.Context) {
+	var user models.User
+	email := c.Param("email")
+
+	res, err := api.DB.First(&user, "email=?")
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, user)
 }

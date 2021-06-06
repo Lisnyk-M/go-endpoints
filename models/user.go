@@ -9,7 +9,14 @@ type User struct {
 	Name     string
 	Email    string
 	Password string
+	// CreditCards []CreditCard
 }
+
+// type CreditCard struct {
+// 	gorm.Model
+// 	Number string
+// 	UserID uint
+// }
 
 type RegisterForm struct {
 	User     string `json:"user" binding:"required"`
